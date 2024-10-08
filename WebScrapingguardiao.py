@@ -84,10 +84,33 @@ for arquivo in os.listdir(diretorio):
         conexao = sqlite3.connect('Banco_CHAMADAS.db')
         c = conexao.cursor()
         c.execute('''
-            INSERT INTO CHAMADAS (
-                ALVO, TERMINAL, TELINTERLOCUTOR, INTERLOCUTORES, AUDIO, MENSAGEM, HTML, DATA, HORAINICIAL, HORAFINAL, DURACAO
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ''', (ALVO, TERMINAL, TELINTERLOCUTOR, INTERLOCUTORES, AUDIO, MENSAGEM, HTML, DATA, HORAINICIAL, HORAFINAL, DURAÇAO))
+            c = conexao.cursor()
+            c.execute(" INSERT INTO CHAMADAS VALUES (:ALVO, :TERMINAL, :TELINTERLOCUTORES, :INTERLOCUTORES, :AUDIO, :MENSAGEM, :HTML, :DATA, :HORAINICIAL, :HORAFINAL, :DURAÇÃO)",
+                     {
+                         'ALVO':ALVO,
+                 
+                         'TERMINAL':TERMINAL,
+                 
+                         'TELINTERLOCUTORES':TELINTERLOCUTOR,
+                         
+                         'INTERLOCUTORES':INTERLOCUTORES,
+                         
+                         'AUDIO':AUDIO,
+                         
+                         'MENSAGEM':MENSAGEM,
+                         
+                         'HTML':HTML,
+                         
+                         'DATA':DATA,
+                 
+                         'HORAINICIAL':horainicial,
+                         
+                         'HORAFINAL':tempo_soma_str,
+                        
+                         'DURAÇÃO':duração
+                         
+                     })
+
 
         conexao.commit()
         conexao.close()
