@@ -1,4 +1,3 @@
-
 import tkinter as tk
 import pandas as pd
 import sqlite3
@@ -33,7 +32,7 @@ from selenium.webdriver.common.by import By
 import sqlite3
 
 #ATENÇÃO: no próprio computador do Antônio eu fiz algumas alterações no código para este interagir com o usuário, exemplo aqui no diretório, eu chamei a função input(“perguntando a pasta a ser compilada”), atribuindo a mesma à variável diretorio
-diretorio = r"C:\Users\PC\Desktop\ANTÔNIO\CHAMADAS"        
+diretorio = r"C:\Users\PC\Desktop\CLIENTE\CHAMADAS"        
 
 
 for arquivo in os.listdir(diretorio):
@@ -63,7 +62,7 @@ for arquivo in os.listdir(diretorio):
         #adaptar
         AUDIO = navegador.find_element(By.XPATH,
             '/html/body/center/table[2]/tbody/tr[1]/td/table/tbody/tr[2]/td[9]').get_attribute("textContent")
-        a2 = "C:\\Users\\PC\\Desktop\\ANTÔNIO\\Gravacoes\\Gravacoes\\"
+        a2 = "C:\\Users\\PC\\Desktop\\CLIENTE\\Gravacoes\\Gravacoes\\"
         a3 = '.wav'
         a1 = a2 + AUDIO[0:8] + a3
         AUDIO = a1
