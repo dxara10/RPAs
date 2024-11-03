@@ -1,0 +1,44 @@
+{
+  "NameProject": "Desktop",
+  "Main": "Bot.xaml",
+  "Description": null,
+  "Tecnology": "Python",
+  "Dependencies": [],
+  "WebDrivers": [
+    {
+      "Import": "CHROME,C:\\RPA\\WebDrivers\\chromedriver.exe"
+    },
+    {
+      "Import": "CUSTOM,C:\\RPA\\WebDrivers\\custom.exe"
+    },
+    {
+      "Import": "EDGE,C:\\RPA\\WebDrivers\\edge.exe"
+    },
+    {
+      "Import": "FIREFOX,C:\\RPA\\WebDrivers\\firefox.exe"
+    }
+  ],
+  "MaestroLogin": null,
+  "Packages": [
+    {
+      "Import": "JornadaRPA.Web"
+    },
+    {
+      "Import": "JornadaRPA.Desktop"
+    },
+    {
+      "Import": "JornadaRPA.Mouse"
+    },
+    {
+      "Import": "JornadaRPA.Python"
+    },
+    {
+      "Import": "JornadaRPA.Excel"
+    },
+    {
+      "Import": "JornadaRPA.Keyboard"
+    }
+  ],
+  "PathSelector": "C:\\Jornada RPA Selector 1.0\\JornadaRPA.Selector.exe",
+  "PathRunner": "C:\\"
+}

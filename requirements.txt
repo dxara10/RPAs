@@ -1,0 +1,16 @@
+botcity-email-plugin==0.1.5
+botcity-excel-plugin==0.1.7
+botcity-framework-base==0.4.3
+botcity-framework-core==1.1.4
+botcity-framework-web==0.8.4
+botcity-maestro-sdk==0.4.2
+importlib==1.0.4
+
+# Uncomment to use botcity-utils
+# botcity-utils>=0.1.2
+
+# Uncomment to use botcity-crawler-plugin
+# botcity-crawler-plugin
+
+# Uncomment to use Pandas
+# pandas
